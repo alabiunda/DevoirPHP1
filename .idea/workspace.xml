@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b49f5dd-8401-40ca-be66-fb0a45fa6679" name="Default Changelist" comment="" />
+    <list default="true" id="8b49f5dd-8401-40ca-be66-fb0a45fa6679" name="Default Changelist" comment="V1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/ProductManager.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,12 +46,24 @@
       <updated>1587369620620</updated>
       <workItem from="1587369621987" duration="3035000" />
       <workItem from="1587378769978" duration="93000" />
-      <workItem from="1587379573526" duration="4646000" />
+      <workItem from="1587379573526" duration="8173000" />
     </task>
+    <task id="LOCAL-00001" summary="V1">
+      <created>1587384799157</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587384799157</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="V1" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1587380735085">
@@ -67,6 +82,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587369649230" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1587389909162">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587389909162" />
     <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587384601886">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
