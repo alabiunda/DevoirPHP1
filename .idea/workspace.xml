@@ -4,6 +4,7 @@
     <list default="true" id="8b49f5dd-8401-40ca-be66-fb0a45fa6679" name="Default Changelist" comment="V1">
       <change beforePath="$PROJECT_DIR$/../../../../wamp64/www/DevoirPHP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../wamp64/www/DevoirPHP1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../wamp64/www/DevoirPHP1/ProductManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../wamp64/www/DevoirPHP1/ProductManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../wamp64/www/DevoirPHP1/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../wamp64/www/DevoirPHP1/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +34,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -54,7 +55,7 @@
       <workItem from="1587369621987" duration="3035000" />
       <workItem from="1587378769978" duration="93000" />
       <workItem from="1587379573526" duration="8173000" />
-      <workItem from="1587391957315" duration="1337000" />
+      <workItem from="1587391957315" duration="10878000" />
     </task>
     <task id="LOCAL-00001" summary="V1">
       <created>1587384799157</created>
@@ -63,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587384799157</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="V1">
+      <created>1587393402446</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587393402446</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,15 +99,16 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="834" y="423" key="Github.ShareDialog/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587384333340" />
-    <state x="403" y="165" key="SettingsEditor" timestamp="1587393377097">
+    <state x="403" y="165" key="SettingsEditor" timestamp="1587401535470">
       <screen x="0" y="0" width="1680" height="1018" />
     </state>
     <state x="461" y="170" key="SettingsEditor/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587369649230" />
-    <state x="403" y="165" key="SettingsEditor/0.0.1680.1018/-1920.-32.1920.1050@0.0.1680.1018" timestamp="1587393377097" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1587389909162">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="403" y="165" key="SettingsEditor/0.0.1680.1018/-1920.-32.1920.1050@0.0.1680.1018" timestamp="1587401535470" />
+    <state x="483" y="250" key="Vcs.Push.Dialog.v2" timestamp="1587393406578">
+      <screen x="0" y="0" width="1680" height="1018" />
     </state>
     <state x="552" y="258" key="Vcs.Push.Dialog.v2/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587389909162" />
+    <state x="483" y="250" key="Vcs.Push.Dialog.v2/0.0.1680.1018/-1920.-32.1920.1050@0.0.1680.1018" timestamp="1587393406578" />
     <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587384601886">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -108,10 +117,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="709" y="269" width="530" height="512" key="com.jetbrains.php.test.PhpNewTestDialog/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587381670884" />
-    <state x="-1042" y="-32" width="714" height="1005" maximized="true" key="dock-window-1" timestamp="1587392837876">
+    <state x="506" y="273" width="714" height="1005" key="dock-window-1" timestamp="1587395290226">
+      <screen x="0" y="0" width="1680" height="1018" />
+    </state>
+    <state x="506" y="273" width="714" height="1005" key="dock-window-1/0.0.1680.1018/-1920.-32.1920.1050@0.0.1680.1018" timestamp="1587395290226" />
+    <state x="-1663" y="-32" width="1401" height="1005" key="dock-window-2" timestamp="1587404644678">
       <screen x="-1920" y="-32" width="1920" height="1050" />
     </state>
-    <state x="-1042" y="-32" width="714" height="1005" maximized="true" key="dock-window-1/0.0.1680.1018/-1920.-32.1920.1050@0.0.1680.1018" timestamp="1587392837876" />
+    <state x="-1663" y="-32" width="1401" height="1005" key="dock-window-2/0.0.1680.1018/-1920.-32.1920.1050@0.0.1680.1018" timestamp="1587404644678" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1587383168122">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

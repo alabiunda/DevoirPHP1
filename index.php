@@ -1,70 +1,57 @@
-<?php
-    $results = array();
-    $has_search = false;
-    $err = false;
-    if(isset($_GET['search'])) {
-        $has_search = true; 
-        $db_con = new PDO('mysql:host=localhost;dbname=demo', 'root', '');
-        $db_con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $qry = "SELECT name, price_total, quantity from products WHERE name LIKE '%{$_GET['search']}%'";
-        try {
-            $results = $db_con->query("SELECT name, price_total, quantity from products WHERE name LIKE '%{$_GET['search']}%'", PDO::FETCH_ASSOC)->fetchAll();
-        } catch (PDOException $exception) {
-            $err = true;
-        }
-    }
+<?php 
+include 'Product.php';
+include 'ProductManager.php';
+$product_manager = new ProductManager();
+$display = 'list';
+
+if(isset($_POST) && isset($_POST['type']) && $_POST['type'] == 'create') {
+    $product = $product_manager->save($_POST);
+}
+
+if(isset($_GET) && isset($_GET['pk'])) {
+    $product = $product_manager->fetch($_GET['pk']);
+    $display = 'one';
+} else {
+    $product_list = $product_manager->fetchAll();
+}
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Super Safe Shop</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/script.js"></script>
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    
+    <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Super Safe Shop</h1>
-        <section class="search">
-            <form action="index.php" method="get" autocomplete="none">
-                <input type="search" autocomplete="none" id="search-inp" name="search" placeholder="Trouvez nos produits">
-                <input type="submit" value="Recherche">
-            </form>
-        </section>
-    </header>
-    <main>
+    <button type="button" id="btn">CLICK ME</button>
+    
+       <form action="index.php" method="get" id="search-form">
+        <label for="pk-search">Rechercher</label>
+        <input type="number" name="pk" id="pk-search">
+        <input type="submit" value="Rechercher">
+    </form>
+    
+    <form action="index.php" method="post">
+        <input type="hidden" name="type" value="create">
+        <input type="text" name="name">
+        <input type="number" name="price" step="0.01">
+        <input type="number" name="quantity" min="0">
+        <input type="submit">
+    </form>
+    
+    <form action="index.php" method="post">
         
-        <section class="results">
-            <?php if ($err) : ?> 
-                <span class="error">Une erreur est survenue<span class="smiley">:(</span></span>
-            <?php elseif ($has_search && !empty($results)): ?>
-                <span class="count"><?= sizeof($results) ?> produits correspondent</span>
-                <table>
-                    <tr>
-                        <th>Nom</th>
-                        <th>Prix</th>
-                        <th>Quantité</th>
-                    </tr>
-                    <?php foreach($results as $r): ?>
-                        <tr>
-                            <?php foreach($r as $val): ?>
-                                <td><?= $val ?></td>
-                            <?php endforeach; ?>
-                        </tr>
-                    <?php endforeach; ?>
-                </table>
-            <?php elseif ($has_search): ?>
-                <span class="warning">Aucun résultat pour votre recherche "<?= $_GET['search'] ?>"</span>
-            <?php endif; ?>
-        </section>
-    </main>
-    <button class="toggle-qry">SHOW QRY</button>
-    <footer>
-        <?php if (isset($qry)): ?>
-            <span class="qry">Requête SQL : <?= $qry ?></span>
-        <?php endif; ?>
-    </footer>
+    </form>
+    <section id="ajax-rsp">
+        
+    </section>
+    
+    <?php if($display == 'one') include 'unique_view.php'; ?>
+    <?php if($display == 'list') include 'table_view.php'; ?>
 </body>
 </html>
+
