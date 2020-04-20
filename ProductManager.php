@@ -97,4 +97,28 @@ class ProductManager {
 			$this->$property = $value;
 		}
     }
+
+    function delete($pk){
+        try {
+            $statement = $this->connection->prepare("DELETE FROM {$this->table} WHERE pk = ?");
+            $statement->execute([$pk]);
+        } catch (PDOException $e) {
+            print $e->getMessage();
+        }
+    }
+
+    function update($name,$price,$quantity,$pk){
+        $statement = $this->connection->prepare("UPDATE products SET name = ?, price = ?, quantity = ? WHERE pk = ?");
+        $statement->execute(([$name,$price,$quantity,$pk]));
+    }
+
+    function calc_Total($price,$vat){
+        $totalPrice = $price + ($price*($vat/100));
+        return ($totalPrice);
+    }
+
+    function calc_VatValue($price,$vat){
+        $vatValue = $price*($vat*100);
+        return ($vatValue);
+    }
 }

@@ -3,12 +3,19 @@ include 'Product.php';
 include 'ProductManager.php';
 $product_manager = new ProductManager();
 $display = 'list';
-
 if(isset($_POST) && isset($_POST['type']) && $_POST['type'] == 'create') {
     $product = $product_manager->save($_POST);
 }
 
-if(isset($_GET) && isset($_GET['pk'])) {
+if(isset($_POST) && isset($_POST['type']) && $_POST['type'] == 'delete') {
+    $product = $product_manager->delete($_POST['pk']);
+}
+
+if(isset($_POST) && isset($_POST['type']) && $_POST['type'] == 'edit') {
+    $product = $product_manager->update($_POST['name'],$_POST['price'],$_POST['quantity'],$_POST['pk']);
+}
+
+    if(isset($_GET) && isset($_GET['pk'])) {
     $product = $product_manager->fetch($_GET['pk']);
     $display = 'one';
 } else {

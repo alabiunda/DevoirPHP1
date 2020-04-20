@@ -8,9 +8,10 @@ $(document).ready(function() {
         $(this).text('DONT');
     });
     
-    $('.delete-btn').on('click', function() {
+    /*$('.delete-btn').on('click', function() {
         $(this).parents('tr').first().detach();
-    });
+        $.post(index.php, )
+    });*/
     
     $('#search-form').on('submit', function(event) {
         
@@ -24,6 +25,5 @@ $(document).ready(function() {
         });
         
     });
-    
 });
 
