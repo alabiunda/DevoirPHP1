@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b49f5dd-8401-40ca-be66-fb0a45fa6679" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1anRxo66JpoVTlbFAYtvUqdlFv7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b49f5dd-8401-40ca-be66-fb0a45fa6679" name="Default Changelist" comment="" />
+      <created>1587369620620</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587369620620</updated>
+      <workItem from="1587369621987" duration="3035000" />
+      <workItem from="1587378769978" duration="93000" />
+      <workItem from="1587379573526" duration="4646000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1587380735085">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587380735085" />
+    <state x="740" y="266" key="FileChooserDialogImpl" timestamp="1587384589584">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="266" key="FileChooserDialogImpl/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587384589584" />
+    <state x="834" y="423" key="Github.ShareDialog" timestamp="1587384333340">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="834" y="423" key="Github.ShareDialog/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587384333340" />
+    <state x="461" y="170" key="SettingsEditor" timestamp="1587369649230">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="170" key="SettingsEditor/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587369649230" />
+    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587384601886">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587384601886" />
+    <state x="709" y="269" width="530" height="512" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1587381670884">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="709" y="269" width="530" height="512" key="com.jetbrains.php.test.PhpNewTestDialog/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587381670884" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1587383168122">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587383168122" />
+  </component>
+</project>
