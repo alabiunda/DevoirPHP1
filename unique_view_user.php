@@ -1,0 +1,1 @@
+<h2><?= $user->__get('username'); ?></h2>

@@ -11,6 +11,30 @@ class UserManager {
         $this->user_list = array();
     }
 
+    function save($data) {
+        $data['pk'] = -1;
+        $date = date("Y-m-d h:i:sa");
+        $user = $this->create([
+            'pk' => $data['pk'],
+            'username' => $data['username'],
+            'password' =>$data['password'],
+        ]);
+
+        if ($user) {
+            try {
+                $statement = $this->connection->prepare(
+                    "INSERT INTO {$this->table} (username, password) VALUES (?, ?)"
+                );
+                $statement->execute([
+                    $user->__get('username'),
+                    $user->__get('password')
+                ]);
+            } catch(PDOException $e) {
+                print $e->getMessage();
+            }
+        }
+    }
+
     function __get($property) {
         if (property_exists($this, $property)) {
             return $this->$property;
@@ -27,9 +51,7 @@ class UserManager {
         return new User(
         $data['pk'],
         $data['username'],
-        $data['password'],
-        $data['created_at'],
-        $data['updated_at']
+        $data['password']
     );
     }
 
@@ -67,9 +89,9 @@ class UserManager {
             $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
             foreach($results as $product) {
-                array_push($this->product_list, $this->create($product));
+                array_push($this->user_list, $this->create($product));
             }
-            return $this->product_list;
+            return $this->user_list;
 
         } catch (PDOException $e) {
             print $e->getMessage();

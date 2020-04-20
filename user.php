@@ -3,15 +3,11 @@ class User {
     private $pk;
     private $username;
     private $password;
-    private $created_at;
-    private $updated_at;
 
-    function __construct($pk,$username,$password,$created_at,$updated_at){
+    function __construct($pk,$username,$password){
         $this->pk=$pk;
         $this->username=$username;
         $this->password=$password;
-        $this->created_at=$created_at;
-        $this->updated_at=$updated_at;
     }
 
     function __get($property) {

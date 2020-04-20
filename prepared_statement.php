@@ -21,7 +21,7 @@
     <meta charset="UTF-8">
     <title>Super Safe Shop 2.0</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="assets/script.js"></script>
 </head>
