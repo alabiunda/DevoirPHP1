@@ -27,17 +27,21 @@ class ProductManager extends DAO{
         
         if ($product) {
             try {
-                $statement = $this->connection->prepare(
-                    "INSERT INTO {$this->table} (name, price, vat, price_vat, price_total, quantity) VALUES (?, ?, ?, ?, ?, ?)"
-                );
-                $statement->execute([
-                    $product->__get('name'),
-                    $product->__get('price'),
-                    $product->__get('vat'),
-                    $product->__get('price_vat'),
-                    $product->__get('price_total'),
-                    $product->__get('quantity')
-                ]);
+                if($product['price']<0 || $product['quantity']<0 || !(is_int(product['price']) || !(is_int($product['quantity'])))){
+                    echo "<script type='text/javascript'>alert('Vous avez entré une valeur incorrecte');</script>";
+                } else {
+                    $statement = $this->connection->prepare(
+                        "INSERT INTO {$this->table} (name, price, vat, price_vat, price_total, quantity) VALUES (?, ?, ?, ?, ?, ?)"
+                    );
+                    $statement->execute([
+                        $product->__get('name'),
+                        $product->__get('price'),
+                        $product->__get('vat'),
+                        $product->__get('price_vat'),
+                        $product->__get('price_total'),
+                        $product->__get('quantity')
+                    ]);
+                }
             } catch(PDOException $e) {
                 print $e->getMessage();
             }
@@ -49,12 +53,12 @@ class ProductManager extends DAO{
             $statement = $this->connection->prepare("SELECT * FROM {$this->table}");
             $statement->execute();
             $results = $statement->fetchAll(PDO::FETCH_ASSOC);
-            
+
             foreach($results as $product) {
                 array_push($this->product_list, $this->create($product));
             }
             return $this->product_list;
-            
+
         } catch (PDOException $e) {
             print $e->getMessage();
         }    
@@ -83,9 +87,15 @@ class ProductManager extends DAO{
         }
     }
 
-    function update($name,$price,$quantity,$pk){
+    function update($name,$price,$quantity,$pk)
+    {
+        if($price<0 || $quantity<0 || !(is_int($price) || !(is_int($quantity)))){
+            echo "<script type='text/javascript'>alert('Vous avez entré une valeur incorrecte');</script>";
+        }
+        else{
         $statement = $this->connection->prepare("UPDATE products SET name = ?, price = ?, quantity = ? WHERE pk = ?");
-        $statement->execute(([$name,$price,$quantity,$pk]));
+        $statement->execute(([$name, $price, $quantity, $pk]));
+        }
     }
 
     function calc_Total($price,$vat){

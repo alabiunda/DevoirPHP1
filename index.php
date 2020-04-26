@@ -8,7 +8,7 @@ $display = 'list';
 $user_manager = new UserManager();
 $displayUser ='list';
 if(isset($_POST) && isset($_POST['type']) && $_POST['type'] == 'create') {
-    $product = $product_manager->save($_POST);
+        $product = $product_manager->save($_POST);
 }
 
 if(isset($_POST) && isset($_POST['type']) && $_POST['type'] == 'delete') {
