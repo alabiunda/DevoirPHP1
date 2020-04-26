@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8b49f5dd-8401-40ca-be66-fb0a45fa6679" name="Default Changelist" comment="V1">
-      <change beforePath="$PROJECT_DIR$/../../../../wamp64/www/DevoirPHP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../wamp64/www/DevoirPHP1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../wamp64/www/DevoirPHP1/ProductManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../wamp64/www/DevoirPHP1/ProductManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../wamp64/www/DevoirPHP1/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../wamp64/www/DevoirPHP1/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/ProductManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserManager.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +34,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../wamp64/www/DevoirPHP1" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1anRxo66JpoVTlbFAYtvUqdlFv7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -27,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../wamp64/www" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,6 +75,7 @@
       <workItem from="1587378769978" duration="93000" />
       <workItem from="1587379573526" duration="8173000" />
       <workItem from="1587391957315" duration="10878000" />
+      <workItem from="1587927500401" duration="2767000" />
     </task>
     <task id="LOCAL-00001" summary="V1">
       <created>1587384799157</created>
@@ -76,6 +96,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="V1" />
@@ -117,9 +148,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="709" y="269" width="530" height="512" key="com.jetbrains.php.test.PhpNewTestDialog/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587381670884" />
-    <state x="506" y="273" width="714" height="1005" key="dock-window-1" timestamp="1587395290226">
+    <state x="-10" y="-17" width="1612" height="1037" maximized="true" key="dock-window-1" timestamp="1587930831731">
       <screen x="0" y="0" width="1680" height="1018" />
     </state>
+    <state x="-10" y="-17" width="1612" height="1037" maximized="true" key="dock-window-1/0.0.1680.1018/-1920.-32.1920.1050@-1920.-32.1920.1050" timestamp="1587930831730" />
     <state x="506" y="273" width="714" height="1005" key="dock-window-1/0.0.1680.1018/-1920.-32.1920.1050@0.0.1680.1018" timestamp="1587395290226" />
     <state x="-1663" y="-32" width="1401" height="1005" key="dock-window-2" timestamp="1587404644678">
       <screen x="-1920" y="-32" width="1920" height="1050" />
