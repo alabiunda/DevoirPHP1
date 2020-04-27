@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b49f5dd-8401-40ca-be66-fb0a45fa6679" name="Default Changelist" comment="Version avec DAO">
+    <list default="true" id="8b49f5dd-8401-40ca-be66-fb0a45fa6679" name="Default Changelist" comment="Version avec DAO + data validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/ProductManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +72,7 @@
       <workItem from="1587378769978" duration="93000" />
       <workItem from="1587379573526" duration="8173000" />
       <workItem from="1587391957315" duration="10878000" />
-      <workItem from="1587927500401" duration="3927000" />
+      <workItem from="1587927500401" duration="5537000" />
     </task>
     <task id="LOCAL-00001" summary="V1">
       <created>1587384799157</created>
@@ -97,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587930996041</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Version avec DAO + data validation">
+      <created>1587932336309</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587932336309</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,7 +122,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="V1" />
     <MESSAGE value="Version avec DAO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version avec DAO" />
+    <MESSAGE value="Version avec DAO + data validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version avec DAO + data validation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1506" y="148" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587392910544">
@@ -142,12 +148,12 @@
     </state>
     <state x="461" y="170" key="SettingsEditor/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587369649230" />
     <state x="403" y="165" key="SettingsEditor/0.0.1680.1018/-1920.-32.1920.1050@0.0.1680.1018" timestamp="1587401535470" />
-    <state x="-1368" y="226" key="Vcs.Push.Dialog.v2" timestamp="1587930997846">
-      <screen x="-1920" y="-32" width="1920" height="1050" />
+    <state x="483" y="250" key="Vcs.Push.Dialog.v2" timestamp="1587932340058">
+      <screen x="0" y="0" width="1680" height="1018" />
     </state>
     <state x="552" y="258" key="Vcs.Push.Dialog.v2/-1366.313.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1587389909162" />
     <state x="-1368" y="226" key="Vcs.Push.Dialog.v2/0.0.1680.1018/-1920.-32.1920.1050@-1920.-32.1920.1050" timestamp="1587930997846" />
-    <state x="483" y="250" key="Vcs.Push.Dialog.v2/0.0.1680.1018/-1920.-32.1920.1050@0.0.1680.1018" timestamp="1587393406578" />
+    <state x="483" y="250" key="Vcs.Push.Dialog.v2/0.0.1680.1018/-1920.-32.1920.1050@0.0.1680.1018" timestamp="1587932340058" />
     <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587384601886">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
